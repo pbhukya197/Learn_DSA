@@ -10,7 +10,7 @@ public class LeaderinArray {
         ArrayList<Integer> list = new ArrayList<>();
         int max = Integer.MIN_VALUE;
         for(int i=n-1;i>=0;i--){
-            if(arr.get(i) > max){
+            if(arr.get(i) >= max){
                 list.add(arr.get(i));
                 max = Math.max(max, arr.get(i));
             }
