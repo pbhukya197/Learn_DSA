@@ -22,7 +22,7 @@ public class FirstAndLastOccurrence {
         return first;
     }
 
-    public static int lastOccurrence(int[] arr, int x){
+    public static int LastOccurrence(int[] arr, int x){
         int low = 0;
         int high = arr.length - 1;
         int last = -1;
@@ -49,6 +49,15 @@ public class FirstAndLastOccurrence {
         }
         int x = input.nextInt();
         System.out.println(FirstOccurrence(arr,x));
-        System.out.println(lastOccurrence(arr,x));
+        System.out.println(LastOccurrence(arr,x));
+
+        /**
+         *          public int[] searchRange(int[] nums, int target) {
+         *             int first = FirstOccurrence(nums, target);
+         *             int last = lastOccurrence(nums, target);
+         *             return new int[] {first, last};
+         *         }
+         */
+
     }
 }
